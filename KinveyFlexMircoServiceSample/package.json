@@ -4,7 +4,7 @@
   "description": "Kinvey Flex micro-service with modularity pattern and Unit testing.",
   "main": "./src/handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha --recursive"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/bilger-progress/KinveyFlexMicroServiceSample/issues"
   },
-  "homepage": "https://github.com/bilger-progress/KinveyFlexMicroServiceSample#readme"
+  "homepage": "https://github.com/bilger-progress/KinveyFlexMicroServiceSample#readme",
+  "dependencies": {
+    "kinvey-flex-sdk": "^3.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
 }
