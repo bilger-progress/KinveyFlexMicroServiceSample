@@ -1,0 +1,30 @@
+{
+  "name": "kinveyflexmircoservicesample",
+  "version": "1.0.0",
+  "description": "Kinvey Flex micro-service with modularity pattern and Unit testing.",
+  "main": "./src/handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilger-progress/KinveyFlexMicroServiceSample.git"
+  },
+  "keywords": [
+    "Kinvey",
+    "Flex",
+    "micro-service",
+    "service",
+    "modular",
+    "modularity",
+    "pattern",
+    "unit",
+    "testing"
+  ],
+  "author": "Bilger Yahov @ Kinvey by Progress.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilger-progress/KinveyFlexMicroServiceSample/issues"
+  },
+  "homepage": "https://github.com/bilger-progress/KinveyFlexMicroServiceSample#readme"
+}
