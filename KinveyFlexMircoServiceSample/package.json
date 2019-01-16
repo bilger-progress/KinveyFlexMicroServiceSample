@@ -1,6 +1,6 @@
 {
   "name": "kinveyflexmircoservicesample",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "description": "Kinvey Flex micro-service with modularity pattern and Unit testing.",
   "main": "./src/handler.js",
   "scripts": {

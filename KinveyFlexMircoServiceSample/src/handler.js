@@ -15,19 +15,19 @@ kinveyFlexSDK.service((err, flex) => {
     }
 
     // Register function handlers.
-    flex.functions.register("integerLoggerProcessor", handleFunction(context, complete, modules, integerLoggerProcessor));
-    flex.functions.register("stringLoggerProcessor", handleFunction(context, complete, modules, stringLoggerProcessor));
+    flex.functions.register("integerLoggerProcessor", handleFunction.bind(null, integerLoggerProcessor));
+    flex.functions.register("stringLoggerProcessor", handleFunction.bind(null, stringLoggerProcessor));
 });
 
 /**
  * Reusable implementation handler.
  * 
+ * @param { Function } implementation (Function Handler)
  * @param { Object } context (Kinvey Flex)
  * @param { Object } complete (Kinvey Flex) 
  * @param { Object } modules  (Kinvey Flex)
- * @param { Function } implementation (Function Handler)
  */
-function handleFunction(context, complete, modules, implementation) {
+function handleFunction(implementation, context, complete, modules) {
     return implementation(context, modules)
             .then((data) => {
                 return complete().setBody({ message: data }).ok().next();
